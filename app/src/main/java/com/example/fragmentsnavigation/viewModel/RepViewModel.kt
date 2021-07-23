@@ -4,7 +4,6 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.fragmentsnavigation.data.MarsPhoto
 import com.example.fragmentsnavigation.network.GitApi
 import kotlinx.coroutines.launch
 import java.util.*

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="search_hint_text">write some repository name</string>
+    <string name="search_button_text">search</string>
+    <string name="save_button_text">save</string>
+    <string name="cancel_button_text">cancel</string>
+</resources>

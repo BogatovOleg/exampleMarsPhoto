@@ -27,53 +27,53 @@
         android:layout_toEndOf="@id/search_text"
         android:layout_margin="16dp"/>
 
-    <TextView
-        android:id="@+id/name_repo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/search_text"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="7dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="30dp" />
-
-    <TextView
-        android:id="@+id/author_repo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/search_text"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="7dp"
-        android:layout_marginTop="126dp"
-        android:layout_marginEnd="30dp" />
-
-    <TextView
-        android:id="@+id/date_last_commit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/search_text"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="204dp"
-        android:layout_marginEnd="27dp" />
-
-    <!--    <androidx.recyclerview.widget.RecyclerView-->
-<!--        android:id="@+id/recycle_view"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
+<!--    <TextView-->
+<!--        android:id="@+id/name_repo"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
 <!--        android:layout_below="@+id/search_text"-->
-<!--        android:layout_marginStart="8dp"-->
-<!--        android:layout_marginTop="8dp"-->
-<!--        android:layout_marginEnd="8dp"-->
-<!--        android:layout_marginBottom="8dp">-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginStart="7dp"-->
+<!--        android:layout_marginTop="70dp"-->
+<!--        android:layout_marginEnd="30dp" />-->
 
-<!--    </androidx.recyclerview.widget.RecyclerView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/author_repo"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/search_text"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginStart="7dp"-->
+<!--        android:layout_marginTop="126dp"-->
+<!--        android:layout_marginEnd="30dp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/date_last_commit"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/search_text"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:layout_marginTop="204dp"-->
+<!--        android:layout_marginEnd="27dp" />-->
+
+        <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_text"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 
 </RelativeLayout>

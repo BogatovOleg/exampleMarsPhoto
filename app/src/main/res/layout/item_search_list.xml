@@ -19,18 +19,20 @@
             android:text="repository:" />
 
         <TextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="user:" />
+
+        <TextView
             android:id="@+id/last_commit_date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"
             android:text="date:" />
 
-        <TextView
-            android:id="@+id/username"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:text="user:" />
+
     </LinearLayout>
 
 

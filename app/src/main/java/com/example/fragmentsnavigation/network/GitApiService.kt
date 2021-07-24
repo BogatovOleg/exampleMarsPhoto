@@ -1,6 +1,7 @@
 package com.example.fragmentsnavigation.network
 
-import com.example.fragmentsnavigation.data.DataRepoSearch
+import com.example.fragmentsnavigation.data.dataCommit.DataCommit
+import com.example.fragmentsnavigation.data.dataRepo.DataRepoSearch
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -27,7 +28,7 @@ interface GitApiService {
     suspend fun getCommit(
         @Path("owner") owner: String,
         @Path("repo") repo: String,
-    ): String
+    ): Response<DataCommit>
 }
 
 object GitApi {

@@ -1,4 +1,4 @@
-package com.example.fragmentsnavigation.data
+package com.example.fragmentsnavigation.data.dataRepo
 
 data class Item(
     val archive_url: String,

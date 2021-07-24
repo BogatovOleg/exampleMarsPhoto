@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
-import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import com.example.fragmentsnavigation.databinding.FragmentSearchBinding
@@ -28,13 +27,19 @@ class SearchFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        viewModel.status.observe(viewLifecycleOwner, Observer {
+        viewModel.repoName.observe(viewLifecycleOwner, Observer {
             binding.nameRepo.text = it
         })
         binding.searchButton.setOnClickListener {
             searchRepos()
-            viewModel.status.observe(viewLifecycleOwner, Observer {
+            viewModel.repoName.observe(viewLifecycleOwner, Observer {
                 binding.nameRepo.text = it
+            })
+            viewModel.userName.observe(viewLifecycleOwner, Observer {
+                binding.authorRepo.text = it
+            })
+            viewModel.lastCommitDate.observe(viewLifecycleOwner, Observer {
+                binding.dateLastCommit.text = it
             })
         }
 
@@ -45,6 +50,8 @@ class SearchFragment : Fragment() {
         viewModel.getGitRepo()
     }
 
+    //навигация ко второму фрагменту
+    //нужно организовать переход с изм данных
     fun moveOn() {
         val action = SearchFragmentDirections.actionSearchFragmentToEditFragment()
         findNavController().navigate(action)
